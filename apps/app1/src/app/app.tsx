@@ -1,12 +1,14 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { StButton, Stam } from '@seetrue/my-ui-library';
+import { formatDate } from '@seetrue/utils-functions';
 
 export function App() {
+  const date = formatDate(new Date());
+
   return (
-    <div>
-      <NxWelcome title="app1" />
+    <div className="bg-gray-300">
+      <Stam />
+      <StButton>Hello World</StButton>
+      <p>Date is: {date}</p>
     </div>
   );
 }

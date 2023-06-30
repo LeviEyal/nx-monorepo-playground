@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@seetrue/my-ui-library": ["libs/my-ui-library/src/index.ts"],
+      "@seetrue/utils-functions": ["libs/utils-functions/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
